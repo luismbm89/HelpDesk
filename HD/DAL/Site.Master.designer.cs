@@ -58,6 +58,33 @@ namespace HD.DAL {
         protected global::System.Web.UI.WebControls.Label lblLogo;
         
         /// <summary>
+        /// Control m1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl m1;
+        
+        /// <summary>
+        /// Control m2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl m2;
+        
+        /// <summary>
+        /// Control m3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl m3;
+        
+        /// <summary>
         /// Control ltRuta.
         /// </summary>
         /// <remarks>

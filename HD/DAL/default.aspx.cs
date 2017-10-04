@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace HD.DAL
@@ -11,10 +12,13 @@ namespace HD.DAL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            HtmlGenericControl c = (HtmlGenericControl)this.Master.FindControl(("m1"));
+            c.Attributes.Add("class", "active");
             try
             {
                 Literal Ruta = this.Master.FindControl("ltRuta") as Literal;
                 Ruta.Text = "<li><i class=\"ace-icon fa fa-home home-icon\"></i><a href = \"default.aspx\"> Inicio </a></li><li class=\"active\">Default</li>";
+
             }
             catch (Exception ex) { }
             }
