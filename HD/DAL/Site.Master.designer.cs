@@ -85,13 +85,13 @@ namespace HD.DAL {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl m3;
         
         /// <summary>
-        /// Control ltRuta.
+        /// Control ContentPlaceHolder3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltRuta;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder3;
         
         /// <summary>
         /// Control ContentPlaceHolder1.
