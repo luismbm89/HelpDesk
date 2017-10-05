@@ -85,6 +85,24 @@ namespace HD.DAL {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl m3;
         
         /// <summary>
+        /// Control m4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl m4;
+        
+        /// <summary>
+        /// Control Li1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Li1;
+        
+        /// <summary>
         /// Control ContentPlaceHolder3.
         /// </summary>
         /// <remarks>

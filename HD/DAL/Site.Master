@@ -299,11 +299,23 @@
 							</span>
 						</a>
 					</li>
-
+                    
 					<li runat="server" id="m3">
 						<a href="#">
 							<i class="menu-icon fa fa-ticket"></i>
 							<span class="menu-text"> Tickets </span>
+						</a>
+					</li>
+					<li runat="server" id="m4">
+						<a href="ConfiguracionSftw.aspx">
+							<i class="menu-icon fa fa-wrench"></i>
+							<span class="menu-text"> Config Sistema </span>
+						</a>
+					</li>
+					<li runat="server" id="Li1">
+						<a href="ConfiguracionSftw.aspx">
+							<i class="menu-icon fa fa-toggle-off"></i>
+							<span class="menu-text"> Seguridad </span>
 						</a>
 					</li>
 				</ul><!-- /.nav-list -->
@@ -322,7 +334,9 @@
 					</div>
 
 					<div class="page-content">
+                        <form runat="server">
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                            </form>
 					</div><!-- /.page-content -->
 				</div>
 			</div><!-- /.main-content -->

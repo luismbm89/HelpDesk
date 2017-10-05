@@ -70,11 +70,47 @@ namespace HD.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Helpdesk.
+        /// </summary>
+        internal static string BD {
+            get {
+                return ResourceManager.GetString("BD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a 123456.
+        /// </summary>
+        internal static string Clave {
+            get {
+                return ResourceManager.GetString("Clave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Servidor.
+        /// </summary>
+        internal static string Servidor {
+            get {
+                return ResourceManager.GetString("Servidor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Empagro.
         /// </summary>
         internal static string Titulo {
             get {
                 return ResourceManager.GetString("Titulo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a helpdesk.
+        /// </summary>
+        internal static string Usuario {
+            get {
+                return ResourceManager.GetString("Usuario", resourceCulture);
             }
         }
     }

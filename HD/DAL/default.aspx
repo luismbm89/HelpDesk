@@ -16,7 +16,7 @@
 												<div class="widget-body">
 													<div class="widget-main">
 														<p class="alert alert-info">
-															No fracasé, sólo descubrí 999 maneras de como no hacer una bombilla</br> <small class="right">Thomas Alva Edison</small>
+															No fracasé, sólo descubrí 999 maneras de como no hacer una bombilla<br/> <small class="right">Thomas Alva Edison</small>
 														</p>
 													</div>
 												</div>
@@ -64,7 +64,8 @@
 									</div>
                                     </div>
 									<hr />
-								</div><!-- PAGE CONTENT ENDS -->                                </div>
+								</div><!-- PAGE CONTENT ENDS -->
+                                </div>
 		<script src="assets/js/jquery-2.1.4.min.js"></script>
 
 		<!-- <![endif]-->
@@ -83,7 +84,9 @@
 
 		<!-- ace scripts -->
 		<script src="assets/js/ace-elements.min.js"></script>
-		<script src="assets/js/ace.min.js"></script>                                <script type="text/javascript">
+		<script src="assets/js/ace.min.js"></script>
+
+                                <script type="text/javascript">
 			jQuery(function($) {
 			
 				$('#simple-colorpicker-1').ace_colorpicker({pull_right:true}).on('change', function(){
