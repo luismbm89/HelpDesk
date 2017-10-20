@@ -22,6 +22,15 @@ namespace HD.DAL {
         protected global::System.Web.UI.HtmlControls.HtmlHead PageTitle;
         
         /// <summary>
+        /// Control ltLogo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltLogo;
+        
+        /// <summary>
         /// Control mainacestyle.
         /// </summary>
         /// <remarks>
@@ -94,13 +103,13 @@ namespace HD.DAL {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl m4;
         
         /// <summary>
-        /// Control Li1.
+        /// Control m5.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Li1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl m5;
         
         /// <summary>
         /// Control ContentPlaceHolder3.

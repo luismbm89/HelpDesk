@@ -22,7 +22,7 @@ namespace HD.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace HD.Properties {
         ///   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HD.Properties.Resources", typeof(Resources).Assembly);
@@ -51,66 +51,12 @@ namespace HD.Properties {
         ///   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a HelpDesk.
-        /// </summary>
-        internal static string Aplicacion {
-            get {
-                return ResourceManager.GetString("Aplicacion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Helpdesk.
-        /// </summary>
-        internal static string BD {
-            get {
-                return ResourceManager.GetString("BD", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a 123456.
-        /// </summary>
-        internal static string Clave {
-            get {
-                return ResourceManager.GetString("Clave", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Servidor.
-        /// </summary>
-        internal static string Servidor {
-            get {
-                return ResourceManager.GetString("Servidor", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Empagro.
-        /// </summary>
-        internal static string Titulo {
-            get {
-                return ResourceManager.GetString("Titulo", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a helpdesk.
-        /// </summary>
-        internal static string Usuario {
-            get {
-                return ResourceManager.GetString("Usuario", resourceCulture);
             }
         }
     }
