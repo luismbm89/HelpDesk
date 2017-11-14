@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Web;
@@ -84,6 +85,18 @@ namespace HD.DAL
         protected void btnCancelar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        protected void LinkButton3_Click(object sender, EventArgs e)
+        {
+            if (ConexionSQL.conexionSQL().State == ConnectionState.Open)
+            {
+                LinkButton3.Text = "OK!";
+            }
+            else {
+
+                LinkButton3.Text = "X!";
+            }
         }
     }
 }

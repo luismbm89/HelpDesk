@@ -94,6 +94,9 @@
                                             <asp:LinkButton ID="btnCancelar" runat="server" CssClass="btn btn-app  btn-danger btn-xs radius-4" OnClick="btnCancelar_Click">
 <i class="ace-icon fa fa-close bigger-160"></i> Cancelar
                                             </asp:LinkButton>
+                                            <asp:LinkButton ID="LinkButton3" runat="server" CssClass="btn btn-app btn-grey btn-xs radius-4" OnClick="LinkButton3_Click">
+<i class="ace-icon fa fa-connectdevelop bigger-160"></i> Test
+                                            </asp:LinkButton>
 
 										</div>
 									</div>
