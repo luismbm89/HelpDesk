@@ -16,7 +16,7 @@
 		<!-- bootstrap & fontawesome -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
-
+        <style>.hidden { display: none; }</style> 
 		<!-- page specific plugin styles -->
 
 		<!-- text fonts -->
@@ -73,7 +73,7 @@
 
 				<div class="navbar-buttons navbar-header pull-right" role="navigation">
 					<ul class="nav ace-nav">
-						<li class="grey dropdown-modal">
+						<li class="grey dropdown-modal" runat="server" id="liTasks" visible="false">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 								<i class="ace-icon fa fa-tasks"></i>
 								<span class="badge badge-grey">1</span>
@@ -110,8 +110,7 @@
 								</li>
 							</ul>
 						</li>
-
-						<li class="purple dropdown-modal">
+						<li class="purple dropdown-modal" runat="server" id="liAlarms" visible="false">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 								<i class="ace-icon fa fa-bell icon-animated-bell"></i>
 								<span class="badge badge-important">1</span>
@@ -148,7 +147,7 @@
 							</ul>
 						</li>
 
-						<li class="green dropdown-modal">
+						<li class="green dropdown-modal" runat="server" id="liMessages" visible="false">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 								<i class="ace-icon fa fa-envelope icon-animated-vertical"></i>
 								<span class="badge badge-success">1</span>
@@ -189,8 +188,13 @@
 								</li>
 							</ul>
 						</li>
-
-						<li class="light-blue dropdown-modal">
+                        
+                        <li class="grey" runat="server" id="lilogin" visible="true">
+                            <a href="#" id="frmLogin">
+								<i class="ace-icon glyphicon glyphicon-log-in"></i>
+                                </a>
+                            </li>
+						<li class="light-blue dropdown-modal" runat="server" id="liUser" visible="false">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
 								<img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
@@ -219,7 +223,7 @@
 								<li class="divider"></li>
 
 								<li>
-									<a href="#">
+									<a href="logout.aspx">
 										<i class="ace-icon fa fa-power-off"></i>
 										Cerrar sesión
 									</a>
@@ -241,7 +245,7 @@
 					try{ace.settings.loadState('sidebar')}catch(e){}
 				</script>
 
-				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+				<div class="sidebar-shortcuts" id="staskbar" runat="server"  visible="false">
 					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
 						<button class="btn btn-success">
 							<i class="ace-icon fa fa-ticket"></i>
@@ -279,7 +283,7 @@
 						</a>
 					</li>
 
-					<li runat="server" id="m2">
+					<li runat="server" id="m2" visible="false">
 						<a href="Bitacora.aspx">
 							<i class="menu-icon fa fa-clock-o"></i>
 							<span class="menu-text">
@@ -288,13 +292,13 @@
 						</a>
 					</li>
                     
-					<li runat="server" id="m3">
+					<li runat="server" id="m3" visible="false">
 						<a href="#">
 							<i class="menu-icon fa fa-ticket"></i>
 							<span class="menu-text"> Tickets </span>
 						</a>
 					</li>
-					<li class="">
+					<li  runat="server" id="m4" visible="false">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-desktop"></i>
 							<span class="menu-text">
@@ -307,7 +311,7 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
-							<li runat="server" id="m4" class="" style="background-color:white">
+							<li runat="server" id="m5" class="" style="background-color:white">
 						<a href="ConfiguracionSftw.aspx">
 							<i class="menu-icon fa fa-wrench"></i>
 							<span class="menu-text"> Sistema </span>
@@ -317,7 +321,7 @@
 								<b class="arrow"></b>
 
 					</li>
-                            <li runat="server" id="m5" style="background-color:white">
+                            <li runat="server" id="m6" style="background-color:white">
 						<a href="Seguridad.aspx">
 							<i class="menu-icon fa fa-toggle-off"></i>
 							<span class="menu-text"> Seguridad </span>
@@ -347,6 +351,33 @@
 					<div class="page-content">
                         <form runat="server">
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+  <div class="modal fade " id="myModal" role="dialog">
+    <div class="modal-dialog">
+          <div class="modal-header" style="background-color:whitesmoke">
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <h3>Iniciar sesión en <span class="blue bolder">
+                                <asp:Label ID="lblTittleLogin" runat="server" Text=""></asp:Label></span></h3>
+          </div>
+          <div class="modal-body" style="padding:20px 10px;background-color:whitesmoke">
+          <div role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Usuario</label>
+                <asp:TextBox ID="txtUsuario" runat="server" type="text" class="form-control" placeholder="Nombre de Usuario"></asp:TextBox>
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Clave</label>
+                <asp:TextBox ID="txtClave" runat="server"  type="password" class="form-control" placeholder="Clave"></asp:TextBox>
+            </div>
+              <asp:Button ID="btnLogin" CssClass="btn btn-info btn-block" runat="server" Text="Iniciar" OnClick="btnLogin_Click" />
+          </div>
+        </div>
+          <div class="modal-footer">
+            Nuevo en <span class="blue bolder">
+                                <asp:Label ID="lblLoginEmpresa" runat="server" Text=""></asp:Label></span>
+            <a href="#" class="btn btn-primary">Register</a>
+          </div>
+            </div>
+      </div>
                             </form>
 					</div><!-- /.page-content -->
 				</div>
@@ -398,5 +429,17 @@
 		<!-- ace scripts -->
 		<script src="assets/js/ace-elements.min.js"></script>
 		<script src="assets/js/ace.min.js"></script>
+        
+      <script>
+            $(document).ready(function () {
+                $("#frmLogin").click(function () {
+                    $("#myModal").modal();
+                    $('#myModal').on('shown.bs.modal', function () {
+                        $('#txtUsuario').focus();
+                        $('#txtUsuario').text = "";
+                    })
+                });
+            });
+</script>
 	</body>
 </html>
