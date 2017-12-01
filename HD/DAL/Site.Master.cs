@@ -31,7 +31,7 @@ namespace HD.DAL
                             xlRead.MoveToElement();
                             string Nombre = xlRead.Name;
                             string Valor = xlRead.Value;
-                            string p = xlRead.BaseURI;//65 App 94 Empresa 120 logo 168 Isotipo
+                            int p = xlRead.LineNumber;//65 App 94 Empresa 120 logo 168 Isotipo
                             switch (p)
                             {
                             }
