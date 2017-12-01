@@ -250,6 +250,10 @@
     <Content Include="DAL\assets\favicon\manifest.json" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\hdsoft - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\hdsoft - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\softcl - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\softcl - Web Deploy.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -344,6 +348,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BO\" />
+    <Folder Include="Configuracion\" />
     <Folder Include="DAO\" />
   </ItemGroup>
   <ItemGroup>

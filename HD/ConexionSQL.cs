@@ -21,7 +21,7 @@ namespace HD
                 conector.DataSource = config.AppSettings.Settings["Servidor"].Value;
                 conector.InitialCatalog = config.AppSettings.Settings["BD"].Value;
                 conector.UserID = config.AppSettings.Settings["Usuario"].Value;
-                conector.Password = Security.Decrypt(config.AppSettings.Settings["Clave"].Value,"Macbook2011");
+                conector.Password = Security.Decrypt(config.AppSettings.Settings["Clave"].Value,"14 de abril de 1989");
                 conn = new SqlConnection(conector.ToString());
                 if (conn.State == System.Data.ConnectionState.Closed)
                 {
